@@ -2,7 +2,6 @@
 [https://r-ahmed2022.github.io/To-do-List-PeerReview/]
 
 ## Built With
-
 HTML
 CSS
 
