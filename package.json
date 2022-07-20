@@ -1,5 +1,6 @@
 {
-  "name": "to-do-list-peerreview",
+  "homepage": "https://github.com/r-ahmed2022/To-do-list-PeerReview",
+   "name": "to-do-list-peerreview",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -18,10 +19,11 @@
   "bugs": {
     "url": "https://github.com/r-ahmed2022/To-do-list-PeerReview/issues"
   },
-  "homepage": "https://github.com/r-ahmed2022/To-do-list-PeerReview#readme",
-  "devDependencies": {
+    "devDependencies": {
     "css-loader": "^6.7.1",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.1",
     "style-loader": "^3.3.1",
     "webpack": "^5.73.0",
     "webpack-cli": "^4.10.0",
