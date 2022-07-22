@@ -4,7 +4,7 @@ import { Tasks, Show } from './functions.js';
 describe('add/remove functions', () => {
   test('adds an element to the list', () => {
     document.body.innerHTML = `
-    <div id="task" class="task-">
+    <div id="task">
       <ul id="to-do-list" class="to-do-list"></ul>
     </div>
 `;
