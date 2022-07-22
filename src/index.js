@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 // eslint-disable-next-line no-unused-vars
-import _, { constant } from 'lodash';
+// import _, { constant } from 'lodash';
 import './style.css';
 import Tasks from './modules/tasks.js';
 import showTasks from './modules/showTasks.js';
@@ -63,7 +63,6 @@ window.editTask = (i, element) => {
   }
   window.location.reload();
 };
-
 
 window.clearAllCompletedTasks = () => {
   const completedList = JSON.parse(localStorage.getItem('tasks'));

@@ -8,6 +8,7 @@ describe('add/remove functions', () => {
       <ul id="to-do-list" class="to-do-list"></ul>
     </div>
 `;
+
     Tasks.addTasks();
     Show.showTasks();
     const list = document.querySelectorAll('.to-do-list');
