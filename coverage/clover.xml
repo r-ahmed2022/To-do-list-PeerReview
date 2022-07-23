@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1658568662937" clover="3.2.0">
-  <project timestamp="1658568662937" name="All files">
+<coverage generated="1658573834900" clover="3.2.0">
+  <project timestamp="1658573834900" name="All files">
     <metrics statements="64" coveredstatements="43" conditionals="20" coveredconditionals="9" methods="8" coveredmethods="7" elements="92" coveredelements="59" complexity="0" loc="64" ncloc="64" packages="1" files="2" classes="2"/>
-    <file name="edit.js" path="D:\Riyaz\Microverse-Projects\To-do-list-PeerReview\src\edit.js">
+    <file name="edit.js" path="C:\Users\osakpolor\Desktop\Microverse Work\To-do-list-PeerReview\src\edit.js">
       <metrics statements="28" coveredstatements="15" conditionals="14" coveredconditionals="6" methods="4" coveredmethods="3"/>
       <line num="3" count="2" type="stmt"/>
       <line num="4" count="0" type="stmt"/>
@@ -33,7 +33,7 @@
       <line num="42" count="0" type="stmt"/>
       <line num="44" count="1" type="stmt"/>
     </file>
-    <file name="functions.js" path="D:\Riyaz\Microverse-Projects\To-do-list-PeerReview\src\functions.js">
+    <file name="functions.js" path="C:\Users\osakpolor\Desktop\Microverse Work\To-do-list-PeerReview\src\functions.js">
       <metrics statements="36" coveredstatements="28" conditionals="6" coveredconditionals="3" methods="4" coveredmethods="4"/>
       <line num="5" count="2" type="stmt"/>
       <line num="7" count="2" type="stmt"/>

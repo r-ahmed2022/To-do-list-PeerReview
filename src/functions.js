@@ -27,8 +27,6 @@ export class Tasks {
        });
        localStorage.setItem('tasks', JSON.stringify(Tasks.tasklist));
      };
-
-     
 }
 
 export class Show {
@@ -55,15 +53,15 @@ export class Show {
      list.append(li);
    }
    for (let i = 0; i < storedList.length; i += 1) {
-    if (Tasks.tasklist[i].completed === true) {
-      const check = document.getElementsByClassName('completed');
-      const collection = document.getElementsByClassName('info');
-      collection[i].style.textDecoration = 'line-through';
-      collection[i].style.color = 'green';
-      collection[i].style.fontWeight = 'bold';
-      collection[i].style.fontStyle = 'italic';
-      check[i].checked = true;
-    }
-  }
+     if (Tasks.tasklist[i].completed === true) {
+       const check = document.getElementsByClassName('completed');
+       const collection = document.getElementsByClassName('info');
+       collection[i].style.textDecoration = 'line-through';
+       collection[i].style.color = 'green';
+       collection[i].style.fontWeight = 'bold';
+       collection[i].style.fontStyle = 'italic';
+       check[i].checked = true;
+     }
+   }
  };
 }
