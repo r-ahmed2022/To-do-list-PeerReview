@@ -27,11 +27,13 @@ export class Tasks {
        });
        localStorage.setItem('tasks', JSON.stringify(Tasks.tasklist));
      };
+
+     
 }
 
 export class Show {
  static showTasks = () => {
-   const storedList = JSON.parse(localStorage.getItem('tasks'));
+   const storedList = localStorage.getItem('tasks') || [];
    const list = document.getElementById('to-do-list');
    for (let i = 0; i < storedList.length; i += 1) {
      Tasks.tasklist.push(
@@ -44,7 +46,7 @@ export class Show {
      const li = document.createElement('li');
      li.setAttribute('class', 'list-item');
      li.innerHTML += `<input type="checkbox" onchange="changed(${i}, '${Tasks.tasklist[i].description}')"  name="completed" class="completed">`;
-     li.innerHTML += `<div class="info"><span  class="task.info">${Tasks.tasklist[i].description}</span>`;
+     li.innerHTML += `<div class="info"><span  class="task-info">${Tasks.tasklist[i].description}</span>`;
      li.innerHTML += `<span class="task-info">${Tasks.tasklist[i].completed}</span></div>`;
      li.innerHTML += `<div class="info"><button type="button" onclick="editTask(${i}, 
                       '${Tasks.tasklist[i].description}')" class="action">Edit</button>`;
@@ -52,5 +54,16 @@ export class Show {
                  </div>`;
      list.append(li);
    }
+   for (let i = 0; i < storedList.length; i += 1) {
+    if (Tasks.tasklist[i].completed === true) {
+      const check = document.getElementsByClassName('completed');
+      const collection = document.getElementsByClassName('info');
+      collection[i].style.textDecoration = 'line-through';
+      collection[i].style.color = 'green';
+      collection[i].style.fontWeight = 'bold';
+      collection[i].style.fontStyle = 'italic';
+      check[i].checked = true;
+    }
+  }
  };
 }

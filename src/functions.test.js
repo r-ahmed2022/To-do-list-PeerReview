@@ -1,5 +1,6 @@
 /* eslint-disable linebreak-style */
 import { Tasks, Show } from './functions.js';
+import { clearCompleted } from './edit.js';
 
 describe('add/remove functions', () => {
   test('adds an element to the list', () => {
@@ -20,4 +21,5 @@ describe('add/remove functions', () => {
     const list = document.querySelectorAll('.to-do-list');
     expect(list).toHaveLength(1);
   });
+
 });
