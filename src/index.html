@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To-Do-App</title>
+     </head>
+    <body>
+       <div class="container">
+        <header  class="site-header">
+            <nav class="navbar">
+                <h2 class="app-title">Today's To Do</h2>
+                <span id="msgs"></span>
+            </nav>
+        </header>
+            <main class="To-do-list-section">
+                    <form class="add-new-to-do" id="add-new-to-do">
+                        <button type="submit" id="addtask">Add</button>
+                        <input id="input-item" type=text placeholder="Add to your list...">
+                    </form>
+                    <span id="error"></span>
+                    <div class="header"><h4>Task</h4><h4>Completed</h4></div>
+                    <ul id="to-do-list">
+                        
+                     
+                    </ul>
+                    <footer class="task-status" id="task-status">
+                        <button class="clear-list" onclick="clearAllCompletedTasks()">clear all completed</button>
+                    </footer>
+            </main>
+            
+       </div>
+    </body>
+    </html>
